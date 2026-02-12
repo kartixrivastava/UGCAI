@@ -13,7 +13,7 @@ import { GhostButton, PrimaryButton } from "./Buttons";
 
 const ProjectCard = ({
   gen,
-  setGenerations,
+  // setGenerations,
   forCommunity = true,
 }: {
   gen: Project;

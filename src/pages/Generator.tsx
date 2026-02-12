@@ -30,6 +30,9 @@ const Generator = () => {
   };
   const handleGenerate = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsGenerating(true);
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+    setIsGenerating(false);
   };
   return (
     <div className="min-h-screen text-white p-6 md:p-12 mt-28">
